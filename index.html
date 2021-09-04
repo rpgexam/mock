@@ -320,7 +320,7 @@ var y = document.getElementById("Audio1"); function Audio1() { y.currentTime = 0
 
  function toolicon() {
  if(sessionStorage.getItem('1i')) {window.history.back();}
- else {location.replace('index.html'); }}
+ else {window.history.back();; }}
  
 onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").fadeOut('fast'); }}
 
@@ -351,7 +351,7 @@ onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").
 
 </div>
 
-<script> function mock1(){hidepage();location.href = '/2021/01/index.html?m=1'}
+<script> function mock1(){hidepage();location.href = 'index.html'}
 
 function cont(){
 if(localStorage.getItem('t5')){$('.1').addClass('r');$('o1 right').html('RESUME').addClass('r');}
