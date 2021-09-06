@@ -39,7 +39,7 @@ input.addEventListener("keypress", function(e) {
 </script>
 <!-- begin wwww.htmlcommentbox.com -->
 
- <div id="HCB_comment_box" hidden><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...
+ <div id="HCB_comment_box" hidden>
 
 
 
@@ -141,6 +141,6 @@ document.querySelector('score').innerHTML = c;
 document.querySelector('author').innerHTML = d;
 }
   
-  setInterval(function(){ getc();    document.getElementById('hcb_form_content').innerHTML = sessionStorage.getItem('score'); }, 1000);
+  setInterval(function(){    document.getElementById('hcb_form_content').innerHTML = sessionStorage.getItem('score');  getc(); }, 1000);
   
       </script>
