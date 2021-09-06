@@ -1,3 +1,5 @@
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+
 <style>
   #HTML7{display:none;}quizbtn, next-previous-buttons {display:none;}
   .goshow {position:fixed}
@@ -26,7 +28,7 @@ document.getElementById("hcb_form_name").value = name;
 
 }
 function showkeyboard(){document.getElementById("name").focus();}
-function submit(){document.getElementById("hcb_submit").click(); location.reload();}
+function submit(){make(); document.getElementById("hcb_submit").click();  }
 
 var input = document.getElementById("name");
 input.addEventListener("keypress", function(e) {
@@ -39,7 +41,7 @@ input.addEventListener("keypress", function(e) {
 </script>
 <!-- begin wwww.htmlcommentbox.com -->
 
- <div id="HCB_comment_box" hidden>
+ <div id="HCB_comment_box">
 
 
 
@@ -136,14 +138,20 @@ input.addEventListener("keypress", function(e) {
 
 var s = sessionStorage.getItem('score');
    function getc(){
+
+
 var c = document.getElementsByClassName('hcb-comment-body')[0].innerHTML;
 var d = document.getElementsByClassName('author-name')[0].innerHTML;
 
 document.querySelector('score').innerHTML = s;
 document.querySelector('author').innerHTML = d;
+
+
 }
-  
+  function make() {  setInterval(function(){ if ($('.btn-secondary').is(':visible')) { location.reload();  }}, 1000); }
+
+
   setInterval(function(){    document.getElementById('hcb_form_content').innerHTML =  s; getc(); }, 1000);
-setInterval(function(){    document.getElementById('hcb_form_content').innerHTML =  s; getc(); }, 1000);
+
   
       </script>
