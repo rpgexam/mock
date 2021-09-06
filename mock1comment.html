@@ -2,13 +2,44 @@
   #HTML7{display:none;}quizbtn, next-previous-buttons {display:none;}
   .goshow {position:fixed}
 </style>
+<input class="page-number-input" id="name" oninput="validity.valid||(value='');manage(this);" type="text" />
 
+<button class="gotopage" id="hidebutton" onclick="showkeyboard()">GO</button>
+
+<button class="gotopage" disabled="" hidden="" id="gobutton" onclick="submit();">GO</button>
 <brtag>
   <brtag>
     <brtag>
+
+<script>
+sessionStorage.setItem('score', '100');
+
+function manage(p) {
+var hidebutton = document.getElementById('hidebutton');
+var gobutton = document.getElementById('gobutton');
+if (p.value != '') 
+{gobutton.hidden = false; gobutton.disabled = false; hidebutton.hidden = true;}
+ else 
+{gobutton.hidden = true; gobutton.disabled = true; hidebutton.hidden = false;}
+var name = document.getElementById("name").value;
+document.getElementById("hcb_form_name").value = name;
+
+}
+function showkeyboard(){document.getElementById("name").focus();}
+function submit(){document.getElementById("hcb_submit").click();}
+
+var input = document.getElementById("name");
+input.addEventListener("keypress", function(e) {
+  if (e.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("gobutton").click(); 
+  }
+});
+  
+</script>
 <!-- begin wwww.htmlcommentbox.com -->
 
- <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...
+ <div id="HCB_comment_box" hidden><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...
 
 
 
@@ -100,14 +131,16 @@
 }
 </style>
 <button class="mmb" style="position:fixed;bottom:0;left:0" onclick="getc()">SCORE</button>
-<div id="getc">SCORE</div>
+<div id="getc">HIGHEST SCORE - <author>Name</author> : <score>SCORE</score></div>
 <script>
    function getc(){
-var c = document.getElementsByClassName('hcb-comment-body');
-var d = c[0].innerHTML;
-document.getElementsByClassName('mmb')[0].innerHTML = d;}
+var c = document.getElementsByClassName('hcb-comment-body')[0].innerHTML;
+var d = document.getElementsByClassName('author-name')[0].innerHTML;
+
+document.querySelector('score').innerHTML = c;
+document.querySelector('author').innerHTML = d;
+}
   
-  setInterval(function(){ getc(); }, 2000);
+  setInterval(function(){ getc();    document.getElementById('hcb_form_content').innerHTML = sessionStorage.getItem('score'); }, 1000);
   
       </script>
-
