@@ -26,7 +26,7 @@ document.getElementById("hcb_form_name").value = name;
 
 }
 function showkeyboard(){document.getElementById("name").focus();}
-function submit(){document.getElementById("hcb_submit").click();}
+function submit(){document.getElementById("hcb_submit").click(); location.reload();}
 
 var input = document.getElementById("name");
 input.addEventListener("keypress", function(e) {
@@ -133,14 +133,17 @@ input.addEventListener("keypress", function(e) {
 <button class="mmb" style="position:fixed;bottom:0;left:0" onclick="getc()">SCORE</button>
 <div id="getc">HIGHEST SCORE - <author>Name</author> : <score>SCORE</score></div>
 <script>
+
+var s = sessionStorage.getItem('score');
    function getc(){
 var c = document.getElementsByClassName('hcb-comment-body')[0].innerHTML;
 var d = document.getElementsByClassName('author-name')[0].innerHTML;
 
-document.querySelector('score').innerHTML = c;
+document.querySelector('score').innerHTML = s;
 document.querySelector('author').innerHTML = d;
 }
   
-  setInterval(function(){    document.getElementById('hcb_form_content').innerHTML = sessionStorage.getItem('score');  getc(); }, 1000);
+  setInterval(function(){    document.getElementById('hcb_form_content').innerHTML =  s; getc(); }, 1000);
+setInterval(function(){    document.getElementById('hcb_form_content').innerHTML =  s; getc(); }, 1000);
   
       </script>
