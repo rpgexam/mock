@@ -1,9 +1,37 @@
 <script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
 
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+
+function showpage() {$("#popup2").fadeOut();}
+function hidepage() {delayloading(); $('#popup2').show();}
+</script>
+
+
 <style>
-  #HTML7{display:none;}quizbtn, next-previous-buttons {display:none;}
-  .goshow {position:fixed}
+  .popup2 {
+background-color: #ffffff;
+width:100%;height:100vh;top:0;left:0;position:fixed; z-index:5;text-align:center;color:black;font-family:Quicksand; }
+
+.loadshadow {box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);padding-top:25px;width:120px;height:95px;margin: 0px auto 0px auto;border-radius:10px;margin-top:40vh;}
+
+.loader {margin-left:auto;margin-right:auto; border: 2px solid transparent;border-radius: 100%;border-left: 2px solid #3498db;border-right: 2px solid #a8044b;width: 30px;height: 30px; animation: spin 0.8s linear infinite;z-index:4;}
+  @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
 </style>
+
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
 <input class="page-number-input" id="name" oninput="validity.valid||(value='');manage(this);" type="text" />
 
 <button class="gotopage" id="hidebutton" onclick="showkeyboard()">GO</button>
@@ -41,7 +69,7 @@ input.addEventListener("keypress", function(e) {
 </script>
 <!-- begin wwww.htmlcommentbox.com -->
 
- <div id="HCB_comment_box" hidden>
+ <div id="HCB_comment_box">
 
 
 
@@ -56,7 +84,7 @@ input.addEventListener("keypress", function(e) {
 
 <style>
  
-  #HCB_comment_box {position:fixed;top:0;left:0;height:100%;overflow-y:scroll;overflow-x: hidden;width:100%;margin-top:55px;margin-bottom:100px;padding-bottom:100px;}
+  #HCB_comment_box {position:fixed;top:0;left:0;height:100%;overflow-y:scroll;overflow-x: hidden;width:100%;margin-top:55px;margin-bottom:100px;padding-bottom:100px; width:0px;height:0px;}
   p#hcb_msg {padding-left:10px;
 }
   #HCB_comment_box .btn-secondary {margin-left:10px;}
@@ -148,10 +176,10 @@ document.querySelector('author').innerHTML = d;
 
 
 }
-  function make() {  setInterval(function(){ if ($('.btn-secondary').is(':visible')) { location.reload();  }}, 1000); }
+  function make() { hidepage(); setInterval(function(){ if ($('.btn-secondary').is(':visible')) { location.reload();  }}, 1000); }
 
 
   setInterval(function(){    document.getElementById('hcb_form_content').innerHTML =  s; getc(); }, 1000);
 
-  
+  window.onload = function() { showpage(); }
       </script>
