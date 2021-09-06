@@ -100,14 +100,14 @@
 }
 </style>
 <button class="mmb" style="position:fixed;bottom:0;left:0" onclick="getc()">SCORE</button>
-<div id="getc">wait</div>
+<div id="getc">SCORE</div>
 <script>
    function getc(){
 var c = document.getElementsByClassName('hcb-comment-body');
 var d = c[0].innerHTML;
 document.getElementsByClassName('mmb')[0].innerHTML = d;}
   
-  setInterval(function(){ getc(); }, 1000);
+  setInterval(function(){ getc(); }, 2000);
   
       </script>
 
