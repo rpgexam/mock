@@ -20,6 +20,7 @@ body {max-width: 700px;user-select: none;
 background-color: #ffffff;
 margin:0px auto 0px auto;
 color:white;}
+button {outline: none;user-select: none;hover:none;border:none;padding:none;box-shadow:none;background:none;color:white;font-family:bengali;}
 
 .lockb {pointer-events:none}
 
@@ -51,80 +52,36 @@ brtag {margin-top:15px; display:inline-block;width:100%;}
   display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; font-feature-settings: 'liga'; text-rendering: optimizeLegibility;
 vertical-align:middle;}
 
-button {outline: none;user-select: none;hover:none;border:none;padding:none;box-shadow:none;background:none;color:white;font-family:roboto;}
+#msticky { position: fixed; margin-bottom:300px; top: 0px; left: 0px; z-index:5; width:100%;}
 
-.pagebar {background: linear-gradient(to right, #32334F 0%, #141527 100%);text-align:center; padding-top: 2px;
-padding-bottom: 2px;margin-left:-2px;margin-right:-2px;font-size:15px;}
+.msubhead {background-image: linear-gradient(to right, #3280e7, #2c77db, #256dcf, #1d64c3, #155bb7); color: white; text-align:left; solid; width:100%;height:54px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);padding-top:2px;}
+.msubhead img {float:left;margin:6px 0px 0px 6px;}
 
-.post-footer {display:none !important;}
-
-#sticky { position: fixed; margin-bottom:300px; top: 0px; left: 0px; z-index:5; width:100%;}
-
-.subhead {background-image: linear-gradient(to right, #3280e7, #2c77db, #256dcf, #1d64c3, #155bb7); color: white; text-align:left; solid; width:100%;height:54px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);padding-top:2px;}
-.subhead img {float:left;margin:6px 0px 0px 6px;}
-
-.subhead abc {background-color:transparent; font-size:17px; color:white; border:0px solid #C8C8C8; margin-top:10px; font-weight: normal;display:inline-block;padding:3px 7px 1px 7px;border-top-left-radius:20px;border-bottom-right-radius:20px;}
+.msubhead abc {background-color:transparent; font-size:17px; color:white; border:0px solid #C8C8C8; margin-top:10px; font-weight: normal;display:inline-block;padding:3px 7px 1px 7px;border-top-left-radius:20px;border-bottom-right-radius:20px;}
 
 toolimg {float:left;}
+
 .tooltitle {height:51.5px; line-height:1.1;display:none;}
+
 tool1{font-size:15px;background-color:#c85f5a; border-radius:20px;padding: 2px 6px 2px 5px; float:left;border-bottom-left-radius:0px;border-top-left-radius:15px;}
 
 tool2 {font-size:15px;background-color:#2E4053;border-radius:20px;padding: 2px 6px 2px 5px; float:left; border-top-left-radius:0px;border-bottom-left-radius:15px;}
 
-tool1h {font-family:Zen Dots; font-size:22px;}
-  
-tool2h {font-size:14px;line-height:1;background-color:#1E569D;border-radius:50px;padding: 0px 4px 0px 4px;}
+#mclosebtn {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px; float:left; margin:3px 0px 0px 8px;text-align:center;color:#fff;transition-duration: 0.2s;}
+#mclosebtn:active {color:black;}
+#mclosebtnr {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px;float:right; margin:3px 8px 0px 0px; color:#fff;transition-duration: 0.2s;}
 
-#closebtn {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px; float:left; margin:3px 0px 0px 8px;text-align:center;color:#fff;transition-duration: 0.2s;}
-#closebtn:active {color:black;}
-#closebtnr {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px;float:right; margin:3px 8px 0px 0px; color:#fff;transition-duration: 0.2s;}
-
-#closebtnr:active {color:black;}
-
-.mmb {background-image: linear-gradient(to left, #406599, #3f5b94, #3f518d, #414786, #443c7e); color: white;font-size: 15px; margin-bottom:0px;margin-top:-20px; height:60px;  width: 100%; text-align: center;border-width:0px; font-family: Quicksand; font-weight:500;border-radius:100px; border-top-left-radius:100px;border-top-right-radius:100px;max-width:100%;float:left;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);}
-
-.mmb ben {font-size:16px;}
-
-.indextable {color: black; font-weight: normal; font-size: 15px; text-decoration: none; text-align: center; width:calc(100% - 6px); font-family:quicksand; border-radius: 20px; user-select:none; margin-bottom:60px;margin-right:auto;margin-left:auto;padding: 3px 3px 3px 3px; padding-bottom:10px;z-index:1200;}
-
-.indextable hr {border:0;border-top: 1px solid #333333;}
-
-.indextable img {margin:auto;display:block;text-align:center;user-select:none;}
-
-.indextable td {padding:6px;}
-
-.intable {padding:0px;border:0px solid white;background-color:transparent;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0);border-radius:10px;}
-
-.intable .image-wrapper2 img {border-radius:1000px;width:75%;border: 7px solid #5e6fa3;background-color: #9d3c2f;}
-
-.image-wrapper2 {height:0;padding-bottom:78%;padding-top:3%;border-radius:0px;border-top-right-radius:1000px;border-top-left-radius:1000px;margin:auto;}
-
-.heading {padding:10px 0px 10px 0px;background-color:#138D75;border-radius:100px;color:white;margin-top:8px;}
-
-.slide ben {font-size:16px;}
-div#ContactForm1 { display: none !important;}
-
-.slide { color: black; font-size: 15px; text-align: center; width:calc(100% - 12px); font-family:quicksand; margin-top:10px;margin-bottom:0px;margin-right:auto;margin-left:auto;padding: 8px 6px 3px 6px; }
-.slide hr {border:0;border-top: 1px solid #333333;}
-
-.slide img {margin:auto;display:block;text-align:center;}
+#mclosebtnr:active {color:black;}
 
 quizbtn {background-image: linear-gradient(to left, #406599, #3f5b94, #3f518d, #414786, #443c7e);position:fixed; bottom:55px;width:84%;left:8%;z-index:3; border-top-right-radius:25px;border-top-left-radius:25px;}
-
-#score1 {background-color:transparent;width:32%;min-width:58px;float:left;color:white;font-family:quicksand;font-size: 15px;padding-bottom:3px;height:45px;}
-
-#sbox {height:38px;margin: 3.5px 1.75px 0px 0px;width:calc(34% - 3.5px);float:left;background-color:#443c7e;border-radius:5px;color: white;font-family:quicksand;font-size: 15px;transition-duration: 0.2s;pointer-events:none;}
-
-.sreset {height:38px;margin: 3.5px 0px 0px 1.75px;width:calc(34% - 3.5px);float:left;background-color:#443c7e;border-radius:5px;color: white;font-family:quicksand;font-size: 15px;transition-duration: 0.2s;}
-.sreset:active {background-color:#000000;}
 
 .dashboard {font-family:quicksand;background-color:#2f2956;border-radius: 5px;border-top-left-radius: 22.5px;  width:calc(50% - 7.5px);float:left;height:45px;margin: 5px 0px 5px 5px; font-size: 15px;}
 
 .resetb {background-color:#2f2956;border-width:0px; color: #fff; font-size: 15px; width:calc(50% - 7.5px);border-radius:5px;border-top-right-radius:22.5px;font-family:quicksand;float:right;height:45px;margin:5px 5px 5px 0px;padding-bottom:3px;transition-duration: 0.2s;}
-.resetb:active {background-color:black;}
-.dashboard:active {background-color:black;}
 
-div#ContactForm1 { display: none !important;}
+.resetb:active {background-color:black;}
+
+.dashboard:active {background-color:black;}
 
 .touch-option {z-index: 1;min-height:30px;height:30px;background: linear-gradient(to left, #c85f5a, #A74F4B);color:white;border-radius:20px;margin:-15px 0px 0px 0px;width:80%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);font-family:quicksand;font-size: 15px;float:left;position:absolute;left:10%;}
 
@@ -137,85 +94,32 @@ next-previous-buttons {background-image: linear-gradient(to right, #406599, #3f5
 
 .next-previous .m-i {font-size:40px;margin-top:0px;}
 
-.goshowleft {background-color:#423a78;text-align:center; border: 0px solid #7A1313;border-radius:5px; color: white; font-weight: normal; font-size: 12px; padding-top:7px;padding-bottom:7px; width: calc(44% - 10px);font-family:quicksand;z-index: 1000;float:left;height:45px;margin:5px 0px 5px 5px;transition-duration: 0.2s;}
+.goshowleft {background-color:#423a78;text-align:center; border: 0px solid #7A1313;border-radius:5px; color: white; font-weight: normal; font-size: 14px; padding-top:7px;padding-bottom:7px; width: calc(44% - 10px);font-family:quicksand;z-index: 1000;float:left;height:45px;margin:5px 0px 5px 5px;transition-duration: 0.2s;}
 
-.details {background-color:#423a78;text-align:center; border: 0px solid #7A1313;border-radius:5px; color: white; font-weight: normal; font-size: 12px;  width: calc(50% - 20px);font-family:quicksand;z-index: 1000;height:60px;margin:0px 5px 5px 5px;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); }
+.details {background-color:#423a78;text-align:center; border: 0px solid #7A1313;border-radius:5px; color: white; font-weight: normal; font-size: 14px;  width: calc(50% - 20px);font-family:quicksand;z-index: 1000;height:60px;margin:0px 5px 5px 5px;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); }
 
 .confirm {background-color:#423a78;height:50px;margin:0px 5px 5px 5px;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); }
-
-#lc1 {background-color:#138D75; width:50%;height:100%;border-radius:4px;font-size: 12px;} 
-  #lc2 {width:50%;height:100%;font-size: 12px;}
-
-.mynext .m-i {animation-name: mymove;animation-duration: 2s;animation-iteration-count: infinite;}
-@keyframes mymove {0%   {margin-left: 0px;} 50%  {margin-left: 30px;} 100% {margin-left: 0px;}}
-
-.goto-1 {border-radius: 0px;bottom:0px;position:fixed;left:0;z-index:1000;width:100%;height:54px;background-color:transparent;display:none;}
-
-.page-number-input {width: 50%;padding-left:16px;height:44px;border: 2px solid #2d456b; outline:none;margin: -20px -3px 3px 5.5%;box-shadow: inset 0px 0px 0px 0px;vertical-align:middle;box-sizing:border-box;border-top-left-radius: 100px; border-bottom-left-radius: 100px; }
-
-.image-wrapper{height:0;padding-bottom:68.0%;border-radius:18px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45); background:url(https://cdn.jsdelivr.net/gh/gkcube/images@1/loading-1-0-1.svg);  background-size: 102px;background-repeat: no-repeat;background-position: center center; }
-	
-.image-wrapper img {width:100%;border-radius:18px;background-color:white;}
-
-.corner-page-number {position: absolute;z-index: 1;background-color:#a8044b;color:white;width:55px;height:30px;border-top-left-radius:18px;border-bottom-right-radius:18px;left:6px;font-family:quicksand;font-size: 16px;}
-
-.ops {margin-top:20px;float:left;width:100%}
-.opt {z-index: 1;width: calc(50% - 5px); margin:0px 1px 7px 1px;border:none;background-color:#2f2956;box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.50);min-height:65px;font-family:quicksand;color:white;border-radius:5px;font-size:15px; display:inline-block; position:relative;vertical-align:top;}
-
-.wbtr {pointer-events:none; background-color:#C0392B;transition:0.3s;}
-  
-  g, r {font-size:22px; width:8%; height:25px; margin:1px 0.16% 1px 0.16%;text-align:center;border-radius:4px;display:inline-block;vertical-align: top;line-height:1.1;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);overflow:hidden;max-width:35px;font-family:quicksand;}
-  g {background-color:green;}
-  r {background-color:black;}
-  
-  r::after {content: "_";padding-right:10px;padding-left:8px;color:#C3B2F5;}
-  
-  .word {margin:20px 0px 10px 0px;width:100%;height:50px;float:left; word-wrap:break-word}
-
+ 
 #belowpopup {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:5;}
 
 #belowend {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:4;}
-
-  .mainbox {width:calc(100% - 20px); background-color:#1d1d2f;float:left;margin-left:10px;margin-top:10px;margin-bottom:100px;padding-top:0px;border-radius:20px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55); }
-  .box1 {float:left;width:calc(50% - 26px);margin-bottom:10px;margin-left:13.34px;border-radius:15px;padding-bottom:0px;padding-top:0px;box-shadow: 0px 0px 0px 0px rgba(255,255,255,0.40);border:3px solid #3a3a5f;} 
-  
-  .box1:after {content: "";display: block;padding-bottom: 82%;}
-  
-  .box1:before {content: ""; display: block; padding-top: 18%;}
-  
-  .heading {height:65px;background-color:#138D75;border-radius:0px;border-top-right-radius:20px;border-top-left-radius:20px;color:white;margin-top:0px;float:left;width:100%;margin-bottom:10px;font-size: 17px;}
-  .image-wrapper3 img {margin-left:25%;}
-  
- .mmb2 {color: white;font-size: 15px;width: 100%;text-align: center;border-width:0px;font-family: Quicksand;max-width:100%;float:left;margin-top:10px;}
-
- .image-wrapper3 img {border-radius:0px;border-top-right-radius:20px;border-top-left-radius:20px;width:50%;border: 0px solid #5e6fa3;float:left;}
-  
- .indextxt {margin-bottom:30px;}
-
-tool3h { font-family:Zen Dots;font-size:32px;}
-tool4h {font-family: Quicksand;font-size:20px;line-height:1;background-color:#1E569D;border-radius:50px;padding: 0px 8px 0px 8px;}
-
-.lbox {display:none;width:100%;background-color:transparent;padding-top:0px;border-radius:10px;position:fixed;top:150px;left:0;}
-
-  .lhead {padding:20px 0px 20px 0px;background-color:#138D75;border-radius:1000px;border-top-right-radius:1000px;border-top-left-radius:1000px;color:white;margin-left:4%;width:92%;margin-bottom:10px;font-size: 17px;}
-
- .lbtn { float:left;width:41%;margin-bottom:10px;margin-left:6%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,45);background-color:#27273f;height:100px;color: white; font-size: 20px;text-align: center; border-width:0px;font-family: Quicksand;max-width:100%;border-radius:10px;border:0px solid #44446f;border-bottom-width:6px;}
  
- .option {background-color:white;color:black; font-size: 15px;  margin-bottom: 7px; width:calc(100% - 40px);text-align: left; border-width:0px; 
+ .moption {font-family:bengali; background-color:white;color:black; font-size: 15px;  margin-bottom: 7px; width:calc(100% - 40px);text-align: left; border-width:0px; 
 border-radius: 0px; border-top-right-radius: 15px;border-bottom-right-radius: 10px; border-left-style: solid;border-color:#595E99; 
 outline : none; height:60px;padding:0 0 0 3px;float:left; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 
-.option hr {border-color:#595E99;}
+.moption hr {border-color:#595E99;}
 
-.option img {display: inline-block; vertical-align:middle;}
+.moption img {display: inline-block; vertical-align:middle;}
 
-.option .material-icons {font-size:26px; color:#ff9e00; vertical-align: -7px; margin-top:-3px;margin-left:3px;}
+.moption .material-icons {font-size:26px; color:#ff9e00; vertical-align: -7px; margin-top:-3px;margin-left:3px;}
 
 mathjax {display:inline-block;vertical-align:middle; text-align:left; margin-top:-15px; margin-bottom:-15px; font-size:13px;}
 
 .o {width: 25px;margin-bottom: 7px; background-color:#e6e6e6;color:black; border-radius:0px; border:0px solid #595E99; margin-left:7px; font-size:17px; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border-left-width: 0px;height:60px;float:left;padding:0;text-align:center;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 
 .r {background-color:#423a78;color:white; }
+.g {background-color:#333333;color:white; }
 
 .age {float:left;font-size:15px}
 .aa {float:left;border-radius:100%;padding:2px; margin-right:5px;}
@@ -225,13 +129,12 @@ mathjax {display:inline-block;vertical-align:middle; text-align:left; margin-top
 .o2 {width:50%;float:left;margin-left:30px;background-color:red;}
 ben {font-family:Solaimanlipi;}
 
-#qbox {background-color:white; margin: 20px 0px 35px 2.5%; padding-top:0px; padding-bottom: 0px;width:95%;float:left; border-radius: 15px; border-top-left-radius: 10px;border-top-right-radius: 10px;border-width:0px; border-bottom-width: 0px; border-color:#595E99; border-style: solid; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); font-family:quicksand;}
+.mqbox {background-color:white; margin: 20px 0px 35px 2.5%; padding-top:0px; padding-bottom: 0px;width:95%;float:left; border-radius: 15px; border-top-left-radius: 10px;border-top-right-radius: 10px;border-width:0px; border-bottom-width: 0px; border-color:#595E99; border-style: solid; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); font-family:quicksand;}
 
-.question { background-color:white;font-size: 15px; color: black; font-style: normal; text-align:left;  padding-left: 8px; 
+.mquestion {font-family:bengali; background-color:white;font-size: 15px; color: black; font-style: normal; text-align:left;  padding-left: 8px; 
 padding-right: 2px;   width:calc(100% - 0px); min-height:70px;border-width:0px; border-radius: 0px; border-top-left-radius: 10px;border-top-right-radius: 10px; border-bottom-width: 2px;
 border-top-width: 0px; border-color:#595E99; border-style: solid; line-height:23px; margin: 0px 0px 7px 0px;}
-.question abc {margin-left:0px;color:white;background-color:#008BC8;border:none;border-radius: 5px; padding:0px 2px 0px 2px;}
-
+.mquestion abc {margin-left:0px;color:white;background-color:#008BC8;border:none;border-radius: 5px; padding:0px 2px 0px 2px;}
 
 .dbox {background-color:white;width:90%;height:330px;border-radius:5px;color:black;text-align:center;padding:20px 0px 0px 0px;font-family:quicksand;}
 .dbox hr { border:0;border-top: 2px solid #595E99;}
@@ -265,18 +168,18 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 </div>
 </div>
 
-<div id="sticky">
-<div class="subhead">
-<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+<div id="msticky">
+<div class="msubhead">
+<button id="mclosebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
 
 <toolimg></toolimg>
 <button class="tooltitle">
 <tool1>Mock Test</tool1><br/><tool2>Mock 1</tool2>
 </button>
 
-<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+<button id="mclosebtnr" class="load" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
 
-<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+<button class="lockb" id="mclosebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
 
 </div></div>
 
@@ -298,8 +201,8 @@ onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").
 
 <submitbox>
 <div class="toggle resetpopup dbox">
-<button class="details">All Questions<br/><aq>7</aq></button>
-<button class="details">Answered<br/><ya>0</ya></button>
+<button class="details">TOTAL QUESTIONS<br/><aq>7</aq></button>
+<button class="details">ANSWERED<br/><ya>0</ya></button>
 <hr/>
 <qb style="display:none">0</qb>
 <qb>1</qb><qb>2</qb><qb>3</qb><qb>4</qb><qb>5</qb>
@@ -374,169 +277,172 @@ BEST OF LUCK!
   <div class="swiper-wrapper">
 
 <div class="swiper-slide">
-<div id="qbox" class='q1'>
-<button class="question">
-<abc>Q.01</abc> Question No.01</button>
-   <q1>
-    <o1>
-    <button class='o 1'>A</button><button class='option'>
-    Option-1</button></o1>
-    <o2>
-    <button class='o 2'>B</button><button class='option'>
-    Option-2</button></o2>
-	<o3>
-    <button class='o 3'>C</button><button class='option'>
-    Option-3</button></o3>
-	<o0>
-    <button class='o 0'>D</button><button class='option'>
-    Option-4</button></o0>
-	</q1>
-	<c>
-    <button class='o'>X</button><button class='option'>
-    Clear Answer</button></c>
+<div class='mqbox q1'>
+<button class="mquestion">
+<abc>Q.01</abc> পানিপথের প্রথম যুদ্ধ কত সালে সংঘটিত হয়?</button>
+
+<o1><button class='o 1'>A</button><button class='moption'>
+১৫২৫
+</button></o1>
+
+<o0><button class='o 0'>B</button><button class='moption'>
+১৫২৬
+</button></o0>
+
+<o2><button class='o 2'>C</button><button class='moption'>
+১৫২৭
+</button></o2>
+
+<o3><button class='o 3'>D</button><button class='moption'>
+১৫২৮
+</button></o3>
+
+<c><button class='o'>X</button><button class='moption'>
+Clear Answer
+</button></c>
 
 </div></div>
 
 <div class="swiper-slide">
-<div id="qbox" class='q2'>
-<button class="question">
+<div class='mqbox q2'>
+<button class="mquestion">
 <abc>Q.02</abc> Question No.02</button>
-    <q2>
+    
     <o1>
-    <button class='o 1'>A</button><button class='option'>
+    <button class='o 1'>A</button><button class='moption'>
     Option-1</button></o1>
     <o2>
-    <button class='o 2'>B</button><button class='option'>
+    <button class='o 2'>B</button><button class='moption'>
     Option-2</button></o2>
 	<o3>
-    <button class='o 3'>C</button><button class='option'>
+    <button class='o 3'>C</button><button class='moption'>
     Option-3</button></o3>
 	<o0>
-    <button class='o 0'>D</button><button class='option'>
+    <button class='o 0'>D</button><button class='moption'>
     Option-4</button></o0>
-	</q2>
+	
     <c>
-    <button class='o'>X</button><button class='option'>
+    <button class='o'>X</button><button class='moption'>
     Clear Answer</button></c>
 
 </div></div>
 
 <div class="swiper-slide">
-<div id="qbox" class='q3'>
-<button class="question">
+<div class='mqbox q3'>
+<button class="mquestion">
 <abc>Q.03</abc> Question No.02</button>
     <q3>
     <o1>
-    <button class='o 1'>A</button><button class='option'>
+    <button class='o 1'>A</button><button class='moption'>
     Option-1</button></o1>
     <o2>
-    <button class='o 2'>B</button><button class='option'>
+    <button class='o 2'>B</button><button class='moption'>
     Option-2</button></o2>
 	<o3>
-    <button class='o 3'>C</button><button class='option'>
+    <button class='o 3'>C</button><button class='moption'>
     Option-3</button></o3>
 	<o0>
-    <button class='o 0'>D</button><button class='option'>
+    <button class='o 0'>D</button><button class='moption'>
     Option-4</button></o0>
 	</q3>
     <c>
-    <button class='o'>X</button><button class='option'>
+    <button class='o'>X</button><button class='moption'>
     Clear Answer</button></c>
 
 </div></div>
 
 <div class="swiper-slide">
-<div id="qbox" class='q4'>
-<button class="question">
+<div class='mqbox q4'>
+<button class="mquestion">
 <abc>Q.04</abc> Question No.04</button>
     <q4>
     <o1>
-    <button class='o 1'>A</button><button class='option'>
+    <button class='o 1'>A</button><button class='moption'>
     Option-1</button></o1>
     <o2>
-    <button class='o 2'>B</button><button class='option'>
+    <button class='o 2'>B</button><button class='moption'>
     Option-2</button></o2>
 	<o3>
-    <button class='o 3'>C</button><button class='option'>
+    <button class='o 3'>C</button><button class='moption'>
     Option-3</button></o3>
 	<o0>
-    <button class='o 0'>D</button><button class='option'>
+    <button class='o 0'>D</button><button class='moption'>
     Option-4</button></o0>
 	</q4>
     <c>
-    <button class='o'>X</button><button class='option'>
+    <button class='o'>X</button><button class='moption'>
     Clear Answer</button></c>
 
 </div></div>
 
 <div class="swiper-slide">
-<div id="qbox" class='q5'>
-<button class="question">
+<div class='mqbox q5'>
+<button class="mquestion">
 <abc>Q.05</abc> Question No.05</button>
     <q5>
     <o1>
-    <button class='o 1'>A</button><button class='option'>
+    <button class='o 1'>A</button><button class='moption'>
     Option-1</button></o1>
     <o2>
-    <button class='o 2'>B</button><button class='option'>
+    <button class='o 2'>B</button><button class='moption'>
     Option-2</button></o2>
 	<o3>
-    <button class='o 3'>C</button><button class='option'>
+    <button class='o 3'>C</button><button class='moption'>
     Option-3</button></o3>
 	<o0>
-    <button class='o 0'>D</button><button class='option'>
+    <button class='o 0'>D</button><button class='moption'>
     Option-4</button></o0>
 	</q5>
     <c>
-    <button class='o'>X</button><button class='option'>
+    <button class='o'>X</button><button class='moption'>
     Clear Answer</button></c>
 
 </div></div>
 
 <div class="swiper-slide">
-<div id="qbox" class='q6'>
-<button class="question">
+<div class='mqbox q6'>
+<button class="mquestion">
 <abc>Q.06</abc> Question No.06</button>
     <q6>
     <o1>
-    <button class='o 1'>A</button><button class='option'>
+    <button class='o 1'>A</button><button class='moption'>
     Option-1</button></o1>
     <o2>
-    <button class='o 2'>B</button><button class='option'>
+    <button class='o 2'>B</button><button class='moption'>
     Option-2</button></o2>
 	<o3>
-    <button class='o 3'>C</button><button class='option'>
+    <button class='o 3'>C</button><button class='moption'>
     Option-3</button></o3>
 	<o0>
-    <button class='o 0'>D</button><button class='option'>
+    <button class='o 0'>D</button><button class='moption'>
     Option-4</button></o0>
 	</q6>
     <c>
-    <button class='o'>X</button><button class='option'>
+    <button class='o'>X</button><button class='moption'>
     Clear Answer</button></c>
 
 </div></div>
 
 <div class="swiper-slide">
-<div id="qbox" class='q7'>
-<button class="question">
+<div class='mqbox q7'>
+<button class="mquestion">
 <abc>Q.07</abc> Question No.07</button>
     <q7>
     <o1>
-    <button class='o 1'>A</button><button class='option'>
+    <button class='o 1'>A</button><button class='moption'>
     Option-1</button></o1>
     <o2>
-    <button class='o 2'>B</button><button class='option'>
+    <button class='o 2'>B</button><button class='moption'>
     Option-2</button></o2>
 	<o3>
-    <button class='o 3'>C</button><button class='option'>
+    <button class='o 3'>C</button><button class='moption'>
     Option-3</button></o3>
 	<o0>
-    <button class='o 0'>D</button><button class='option'>
+    <button class='o 0'>D</button><button class='moption'>
     Option-4</button></o0>
 	</q7>
     <c>
-    <button class='o'>X</button><button class='option'>
+    <button class='o'>X</button><button class='moption'>
     Clear Answer</button></c>
 
 </div></div>
@@ -552,7 +458,7 @@ DASHBOARD
 </quizbtn> 
 <next-previous-buttons>
 <button class="next-previous next-left"><i class="m-i">&#xe5cb</i></button>
-<button class="goshowleft change"onclick="mylanguage();">TIME REMAINING<br/><end>00:20</end></button>
+<button class="goshowleft change"onclick="mylanguage();">TIME REMAINING<br/><end>01:00</end></button>
 <button class="next-previous next-right"><i class="m-i">&#xe5cc</i></button>
 </next-previous-buttons>
 
@@ -593,7 +499,9 @@ q3 = l.getItem('1q3'),
 q4 = l.getItem('1q4'),
 q5 = l.getItem('1q5'),
 q6 = l.getItem('1q6'),
-q7 = l.getItem('1q7');
+q7 = l.getItem('1q7'),
+ya = l.getItem('ya1'),
+na = l.getItem('na1');
 
 function q1w1(){l.setItem('1q1','1');}
 function q1w2(){l.setItem('1q1','2');}
@@ -643,50 +551,49 @@ function minus() {var y = $('ya'), n = $('na');  y.html(Number(y.html())-1); l.s
 
  </script>
  <script>
+var n1,n2,n3,n4,n5,n6,n7;
  function cont(){
-	var ya = l.getItem('ya1'),
-na = l.getItem('na1');
-	
-	if(ya){$('ya').html(ya);}
+
+if(ya){$('ya').html(ya);}
 if(na){$('na').html(na);}
 	
-if(q1 !== null){$('qb:eq(1)').addClass('r'); $('nq1').html('1');}
+if(q1 !== null){$('qb:eq(1)').addClass('r'); n1='1';}
 if(q1 === '1'){$('.q1 .1').addClass('r');}
 if(q1 === '2'){$('.q1 .2').addClass('r');}
 if(q1 === '3'){$('.q1 .3').addClass('r');}
 if(q1 === '0'){$('.q1 .0').addClass('r');}
 
-if(q2 !== null){$('qb:eq(2)').addClass('r'); $('nq2').html('1');}
+if(q2 !== null){$('qb:eq(2)').addClass('r'); n2='1';}
 if(q2 === '1'){$('.q2 .1').addClass('r');}
 if(q2 === '2'){$('.q2 .2').addClass('r');}
 if(q2 === '3'){$('.q2 .3').addClass('r');}
 if(q2 === '0'){$('.q2 .0').addClass('r');}
 
-if(q3 !== null){$('qb:eq(3)').addClass('r'); $('nq3').html('1');}
+if(q3 !== null){$('qb:eq(3)').addClass('r'); n3='1';}
 if(q3 === '1'){$('.q3 .1').addClass('r');}
 if(q3 === '2'){$('.q3 .2').addClass('r');}
 if(q3 === '3'){$('.q3 .3').addClass('r');}
 if(q3 === '0'){$('.q3 .0').addClass('r');}
 
-if(q4 !== null){$('qb:eq(4)').addClass('r'); $('nq4').html('1');}
+if(q4 !== null){$('qb:eq(4)').addClass('r'); n4='1';}
 if(q4 === '1'){$('.q4 .1').addClass('r');}
 if(q4 === '2'){$('.q4 .2').addClass('r');}
 if(q4 === '3'){$('.q4 .3').addClass('r');}
 if(q4 === '0'){$('.q4 .0').addClass('r');}
 
-if(q5 !== null){$('qb:eq(5)').addClass('r'); $('nq5').html('1');}
+if(q5 !== null){$('qb:eq(5)').addClass('r'); n5='1';}
 if(q5 === '1'){$('.q5 .1').addClass('r');}
 if(q5 === '2'){$('.q5 .2').addClass('r');}
 if(q5 === '3'){$('.q5 .3').addClass('r');}
 if(q5 === '0'){$('.q5 .0').addClass('r');}
 
-if(q6 !== null){$('qb:eq(6)').addClass('r'); $('nq6').html('1');}
+if(q6 !== null){$('qb:eq(6)').addClass('r'); n6='1';}
 if(q6 === '1'){$('.q6 .1').addClass('r');}
 if(q6 === '2'){$('.q6 .2').addClass('r');}
 if(q6 === '3'){$('.q6 .3').addClass('r');}
 if(q6 === '0'){$('.q6 .0').addClass('r');}
 
-if(q7 !== null){$('qb:eq(7)').addClass('r'); $('nq7').html('1');}
+if(q7 !== null){$('qb:eq(7)').addClass('r'); n7='1';}
 if(q7 === '1'){$('.q7 .1').addClass('r');}
 if(q7 === '2'){$('.q7 .2').addClass('r');}
 if(q7 === '3'){$('.q7 .3').addClass('r');}
@@ -697,6 +604,7 @@ if(q7 === '0'){$('.q7 .0').addClass('r');}
 
 
 <script>
+
 $(document).ready(function () {
 
 $("button").click(function(){$(this).blur();});
@@ -707,8 +615,8 @@ $(".q1 o3").click(function(){q1w3();pq1(); $('.q1 .3').addClass('r');});
 $(".q1 o0").click(function(){q1c(); pq1(); $('.q1 .0').addClass('r');});
 $(".q1 c").click(function(){q1cl(); mq1(); });
 
-function pq1(){ if($('nq1').html() != '1') { plus();  $('nq1').html('1');} $('.q1 .1,.q1 .2,.q1 .3,.q1 .0').removeClass('r');$('qb:eq(1)').addClass('r');}
-function mq1(){if($('nq1').html() == '1') { minus(); $('nq1').html('0');} $('.q1 .1,.q1 .2,.q1 .3,.q1 .0, qb:eq(1)').removeClass('r'); }
+function pq1(){ if(n1!='1') { plus();  n1='1';} $('.q1 .o').removeClass('r');$('qb:eq(1)').addClass('r');}
+function mq1(){if(n1=='1') { minus(); n1='0';} $('.q1 .o, qb:eq(1)').removeClass('r'); }
 
 $(".q2 o1").click(function(){q2w1();pq2(); $('.q2 .1').addClass('r');});
 $(".q2 o2").click(function(){q2w2(); pq2();$('.q2 .2').addClass('r');});
@@ -716,8 +624,8 @@ $(".q2 o3").click(function(){q2w3();pq2(); $('.q2 .3').addClass('r');});
 $(".q2 o0").click(function(){q2c(); pq2(); $('.q2 .0').addClass('r');});
 $(".q2 c").click(function(){q2cl(); mq2(); });
 
-function pq2(){ if($('nq2').html() != '1') { plus(); $('nq2').html('1');}$('.q2 .1,.q2 .2,.q2 .3,.q2 .0').removeClass('r'); $('qb:eq(2)').addClass('r');}
-function mq2(){if($('nq2').html() == '1') { minus(); $('nq2').html('0');}$('.q2 .1,.q2 .2,.q2 .3,.q2 .0, qb:eq(2)').removeClass('r'); }
+function pq2(){ if(n2!='1') { plus(); n2='1';}$('.q2 .o').removeClass('r'); $('qb:eq(2)').addClass('r');}
+function mq2(){if(n2=='1') { minus(); n2='0';}$('.q2 .o, qb:eq(2)').removeClass('r'); }
    
 $(".q3 o1").click(function(){q3w1();pq3(); $('.q3 .1').addClass('r');});
 $(".q3 o2").click(function(){q3w2(); pq3();$('.q3 .2').addClass('r');});
@@ -725,8 +633,8 @@ $(".q3 o3").click(function(){q3w3();pq3(); $('.q3 .3').addClass('r');});
 $(".q3 o0").click(function(){q3c(); pq3(); $('.q3 .0').addClass('r');});
 $(".q3 c").click(function(){q3cl(); mq3(); });
 
-function pq3(){ if($('nq3').html() != '1') { plus(); $('nq3').html('1');} $('.q3 .1,.q3 .2,.q3 .3,.q3 .0').removeClass('r'); $('qb:eq(3)').addClass('r');}
-function mq3(){if($('nq3').html() == '1') { minus(); $('nq3').html('0');} $('.q3 .1,.q3 .2,.q3 .3,.q3 .0, qb:eq(3)').removeClass('r'); }
+function pq3(){ if(n3!='1') { plus(); n3='1';} $('.q3 .o').removeClass('r'); $('qb:eq(3)').addClass('r');}
+function mq3(){if(n3=='1') { minus(); n3='0';} $('.q3 .o, qb:eq(3)').removeClass('r'); }
    
 $(".q4 o1").click(function(){q4w1();pq4(); $('.q4 .1').addClass('r');});
 $(".q4 o2").click(function(){q4w2(); pq4();$('.q4 .2').addClass('r');});
@@ -734,8 +642,8 @@ $(".q4 o3").click(function(){q4w3();pq4(); $('.q4 .3').addClass('r');});
 $(".q4 o0").click(function(){q4c(); pq4(); $('.q4 .0').addClass('r');});
 $(".q4 c").click(function(){q4cl(); mq4(); });
 
-function pq4(){ if($('nq4').html() != '1') { plus(); $('nq4').html('1');} $('.q4 .1,.q4 .2,.q4 .3,.q4 .0').removeClass('r'); $('qb:eq(4)').addClass('r');}
-function mq4(){if($('nq4').html() == '1') { minus(); $('nq4').html('0');} $('.q4 .1,.q4 .2,.q4 .3,.q4 .0, qb:eq(4)').removeClass('r'); }
+function pq4(){if(n4!='1') { plus(); n4='1';} $('.q4 .o').removeClass('r'); $('qb:eq(4)').addClass('r');}
+function mq4(){if(n4=='1') { minus(); n4='0';} $('.q4 .o, qb:eq(4)').removeClass('r'); }
 
 $(".q5 o1").click(function(){q5w1();pq5(); $('.q5 .1').addClass('r');});
 $(".q5 o2").click(function(){q5w2(); pq5();$('.q5 .2').addClass('r');});
@@ -743,8 +651,8 @@ $(".q5 o3").click(function(){q5w3();pq5(); $('.q5 .3').addClass('r');});
 $(".q5 o0").click(function(){q5c(); pq5(); $('.q5 .0').addClass('r');});
 $(".q5 c").click(function(){q5cl(); mq5(); });
 
-function pq5(){ if($('nq5').html() != '1') { plus(); $('nq5').html('1');} $('.q5 .1,.q5 .2,.q5 .3,.q5 .0').removeClass('r'); $('qb:eq(5)').addClass('r');}
-function mq5(){if($('nq5').html() == '1') { minus(); $('nq5').html('0');} $('.q5 .1,.q5 .2,.q5 .3,.q5 .0, qb:eq(5)').removeClass('r'); }
+function pq5(){if(n5!='1') { plus(); n5='1';} $('.q5 .o').removeClass('r'); $('qb:eq(5)').addClass('r');}
+function mq5(){if(n5=='1') { minus(); n5='0';} $('.q5 .o, qb:eq(5)').removeClass('r'); }
    
 $(".q6 o1").click(function(){q6w1();pq6(); $('.q6 .1').addClass('r');});
 $(".q6 o2").click(function(){q6w2(); pq6();$('.q6 .2').addClass('r');});
@@ -752,8 +660,8 @@ $(".q6 o3").click(function(){q6w3();pq6(); $('.q6 .3').addClass('r');});
 $(".q6 o0").click(function(){q6c(); pq6(); $('.q6 .0').addClass('r');});
 $(".q6 c").click(function(){q6cl(); mq6(); });
 
-function pq6(){ if($('nq6').html() != '1') { plus(); $('nq6').html('1');} $('.q6 .1,.q6 .2,.q6 .3,.q6 .0').removeClass('r'); $('qb:eq(6)').addClass('r');}
-function mq6(){if($('nq6').html() == '1') { minus(); $('nq6').html('0');} $('.q6 .1,.q6 .2,.q6 .3,.q6 .0, qb:eq(6)').removeClass('r'); }
+function pq6(){if(n6!='1') { plus(); n6='1';} $('.q6 .o').removeClass('r'); $('qb:eq(6)').addClass('r');}
+function mq6(){if(n6=='1') { minus(); n6='0';} $('.q6 .o, qb:eq(6)').removeClass('r'); }
    
 $(".q7 o1").click(function(){q7w1();pq7(); $('.q7 .1').addClass('r');});
 $(".q7 o2").click(function(){q7w2(); pq7();$('.q7 .2').addClass('r');});
@@ -761,8 +669,8 @@ $(".q7 o3").click(function(){q7w3();pq7(); $('.q7 .3').addClass('r');});
 $(".q7 o0").click(function(){q7c(); pq7(); $('.q7 .0').addClass('r');});
 $(".q7 c").click(function(){q7cl(); mq7(); });
 
-function pq7(){ if($('nq7').html() != '1') { plus(); $('nq7').html('1');} $('.q7 .1,.q7 .2,.q7 .3,.q7 .0').removeClass('r'); $('qb:eq(7)').addClass('r');}
-function mq7(){if($('nq7').html() == '1') { minus(); $('nq7').html('0');} $('.q7 .1,.q7 .2,.q7 .3,.q7 .0, qb:eq(7)').removeClass('r'); }
+function pq7(){if(n7!='1') { plus(); n7='1';} $('.q7 .o').removeClass('r'); $('qb:eq(7)').addClass('r');}
+function mq7(){if(n7=='1') { minus(); n7='0';} $('.q7 .o, qb:eq(7)').removeClass('r'); }
       
       
 });
@@ -787,11 +695,9 @@ $("#belowend,.startpopup").fadeOut('fast');}
 
 function ut() {
   ot = new Date(parseInt(l.getItem('d1')));
-  nt = new Date();
-  td = nt - ot; 
-  td /= 1000;
+  nt = new Date(); td = nt - ot;  td /= 1000;
   sec = Math.round(td);
-  dif = 60 - sec;
+  dif = 5 - sec;
   h = Math.floor(dif / 60 / 60);
   ht = h.toString().padStart(2, '0')
   m = Math.floor(dif / 60) - (h * 60);
@@ -854,7 +760,7 @@ if(l.getItem('d1') === null) {$("#belowend,.startpopup").show();}
 }); 
 $(document).ready(function() { cont(); });
 window.onload = function() {}
-$('.loading').click(function(){hidepage();});
+$('.load').click(function(){hidepage();});
 </script>
 <link rel="prefetch" href="list1.html"/>
 <link rel="prefetch" href="result1.html"/>
