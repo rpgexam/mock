@@ -245,7 +245,7 @@ mathjax {display:inline-block;vertical-align:middle; text-align:left; margin-top
 .o2 {width:50%;float:left;margin-left:30px;background-color:red;}
 ben {font-family:Solaimanlipi;}
 
-.option {background-color:white;color:black; font-size: 15px;  margin-bottom: 7px; width:calc(100% - 30px);text-align: left; border-width:0px; 
+.option {background-color:white;color:black; font-size: 15px;  margin-bottom: 7px; width:calc(100% - 40px);text-align: left; border-width:0px; 
 border-radius: 0px; border-top-right-radius: 15px;border-bottom-right-radius: 10px; border-left-style: solid;border-color:#595E99; 
 outline : none; height:60px; line-height:60px;padding:0 0 0 3px;float:left; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 
@@ -254,13 +254,12 @@ outline : none; height:60px; line-height:60px;padding:0 0 0 3px;float:left; box-
 .option img {display: inline-block; vertical-align:middle;}
 
 .option .material-icons {font-size:26px; color:#ff9e00; vertical-align: -7px; margin-top:-3px;margin-left:3px;}
-.o {width: 25px;margin-bottom: 7px; background-color:#e6e6e6;color:black; border-radius:0px; border:0px solid #595E99; margin-left:2px;
+.o {width: 25px;margin-bottom: 7px; background-color:#008BC8;color:white; border-radius:0px; border:0px solid #595E99; margin-left:7px;
 font-size:17px; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border-left-width: 0px;height:60px;float:left;padding:0;
 text-align:center;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 .r {background-color:#423a78;color:white; }
 
-#qbox {background-color:white; margin: 20px 0px 35px 2.5%; padding-top:0px; padding-bottom: 0px;width:95%;float:left; border-radius: 10px; 
-border-top-left-radius: 10px;border-top-right-radius: 10px;border-width:0px; border-bottom-width: 0px; border-color:#595E99; 
+#qbox {background-color:white;margin: 20px 0px 35px 2.5%; padding-top:0px; padding-bottom: 0px;width:95%;float:left; border-radius: 10px; border-top-left-radius: 10px;border-top-right-radius: 10px;border-width:0px; border-bottom-width: 0px; border-color:#595E99; 
 border-style: solid; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); font-family:quicksand;}
 
 .question { background-color:white;font-size: 15px; color: black;width:calc(100% - 0px); min-height:70px;border-width:0px; border-radius: 0px; border-top-left-radius: 10px;
@@ -336,7 +335,7 @@ onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").
    <q1>
     <o1>
     <button class='o 1'>1</button><button class='option' onclick='mock1()'>
-    <opt>MOCK TEST - 1</opt><right>OPEN</right></button></o1>
+    <opt>MOCK TEST - 1 (10 MCQ)</opt><right>OPEN</right></button></o1>
     <o2>
     <button class='o 2'>2</button><button class='option'>
     <opt>MOCK TEST - 2</opt><right>OPEN</right></button></o2>
@@ -354,7 +353,7 @@ onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").
 <script> function mock1(){hidepage();location.href = 'mock1.html'}
 
 function cont(){
-if(localStorage.getItem('t5')){$('.1').addClass('r');$('o1 right').html('RESUME').addClass('r');}
+if(localStorage.getItem('sec1')){$('.1').addClass('r');$('o1 right').html('RESUME').addClass('r');}
 
 }
 </script>
