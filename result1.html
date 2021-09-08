@@ -586,8 +586,8 @@ function storagereset(){
 var remove = ['ya1','na1','d1','e1','s1','sec1','1q1','1q2','1q3','1q4','1q5','1q6','1q7']; for (key of remove) {l.removeItem(key);} 
 location.replace('list1.html'); }
 var ca = 1, wa = 1;
-function correct() { $('ca').html(ca++); $('.0').addClass('g');}
-function wrong() { $('wa').html(wa++); $('.1,.2,.3').addClass('r');}
+function correct() { $('ca').html(ca++);}
+function wrong() { $('wa').html(wa++);}
 
  </script>
 
@@ -615,6 +615,8 @@ $('end').html(show);}
  $(document).ready(function() {
  $("button").click(function(){$(this).blur();});
    if(location.hash){window.history.back();}
+	 $('.0').addClass('g');
+	 $('.1,.2,.3').addClass('r');
    $('.tooltitle').delay(500).slideDown('slow');
    
 setTimeout(function() {if(sessionStorage.getItem('f1')){showpage();}sessionStorage.setItem('f1','t'); }, 300);
