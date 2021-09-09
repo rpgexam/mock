@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +21,8 @@ body {max-width: 700px;user-select: none;
 background-color: #ffffff;
 margin:0px auto 0px auto;
 color:white;}
-button {outline: none;user-select: none;hover:none;border:none;padding:none;box-shadow:none;background:none;color:white;font-family:bengali;}
+
+button {outline: none;user-select: none;hover:none;border:none;padding:none;box-shadow:none;background:none;color:white;font-family:roboto;}
 .lockb {pointer-events:none}
 
 .swiper-wrapper {margin-bottom:100px;}
@@ -51,12 +53,15 @@ brtag {margin-top:15px; display:inline-block;width:100%;}
   display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; font-feature-settings: 'liga'; text-rendering: optimizeLegibility;
 vertical-align:middle;}
 
-#msticky { position: fixed; margin-bottom:300px; top: 0px; left: 0px; z-index: 10; width:100%;}
+.pagebar {background: linear-gradient(to right, #32334F 0%, #141527 100%);text-align:center; padding-top: 2px;
+padding-bottom: 2px;margin-left:-2px;margin-right:-2px;font-size:15px;}
 
-.msubhead {background-image: linear-gradient(to right, #3280e7, #2c77db, #256dcf, #1d64c3, #155bb7); color: white; text-align:left; solid; width:100%;height:54px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);padding-top:2px;}
-.msubhead img {float:left;margin:6px 0px 0px 6px;}
+#sticky { position: fixed; margin-bottom:300px; top: 0px; left: 0px; z-index: 10; width:100%;}
 
-.msubhead abc {background-color:transparent; font-size:17px; color:white; border:0px solid #C8C8C8; margin-top:10px; font-weight: normal;display:inline-block;padding:3px 7px 1px 7px;border-top-left-radius:20px;border-bottom-right-radius:20px;}
+.subhead {background-image: linear-gradient(to right, #3280e7, #2c77db, #256dcf, #1d64c3, #155bb7); color: white; text-align:left; solid; width:100%;height:54px;border-bottom-right-radius:25px;border-bottom-left-radius:25px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);padding-top:2px;}
+.subhead img {float:left;margin:6px 0px 0px 6px;}
+
+.subhead abc {background-color:transparent; font-size:17px; color:white; border:0px solid #C8C8C8; margin-top:10px; font-weight: normal;display:inline-block;padding:3px 7px 1px 7px;border-top-left-radius:20px;border-bottom-right-radius:20px;}
 
 toolimg {float:left;}
 .tooltitle {height:51.5px; line-height:1.1;display:none;}
@@ -64,24 +69,26 @@ tool1{font-size:15px;background-color:#c85f5a; border-radius:20px;padding: 2px 6
 
 tool2 {font-size:15px;background-color:#2E4053;border-radius:20px;padding: 2px 6px 2px 5px; float:left; border-top-left-radius:0px;border-bottom-left-radius:15px;}
 
-#mclosebtn {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px; float:left; margin:3px 0px 0px 8px;text-align:center;color:#fff;transition-duration: 0.2s;}
-#mclosebtn:active {color:black;}
-#mclosebtnr {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px;float:right; margin:3px 8px 0px 0px; color:#fff;transition-duration: 0.2s;}
+tool1h {font-family:Zen Dots; font-size:22px;}
+  
+tool2h {font-size:14px;line-height:1;background-color:#1E569D;border-radius:50px;padding: 0px 4px 0px 4px;}
 
-#mclosebtnr:active {color:black;}
+#closebtn {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px; float:left; margin:3px 0px 0px 8px;text-align:center;color:#fff;transition-duration: 0.2s;}
+#closebtn:active {color:black;}
+#closebtnr {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px;float:right; margin:3px 8px 0px 0px; color:#fff;transition-duration: 0.2s;}
+
+#closebtnr:active {color:black;}
 
 quizbtn {background-image: linear-gradient(to left, #406599, #3f5b94, #3f518d, #414786, #443c7e);position:fixed; bottom:55px;width:84%;left:8%;z-index:3; border-top-right-radius:25px;border-top-left-radius:25px;}
-
-.dashboard {font-family:quicksand;background-color:#2f2956;border-radius: 5px;border-top-left-radius: 22.5px;  width:calc(50% - 7.5px);float:left;height:45px;margin: 5px 0px 5px 5px; font-size: 15px;}
-
-.dashboard:active {background-color:black;}
 
 .dbox {background-color:white;width:90%;height:330px;position:fixed;bottom:120px;left:5%;z-index:2;border-radius:5px;color:black;text-align:center;padding:20px 0px 0px 0px;font-family:quicksand;}
 .dbox hr {border-color:#595E99;}
 
 qb {background-color:white;color:black;text-align:center; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);  font-size: 15px; width:calc(20% - 8px);border-radius:3px;font-family:quicksand;height:25px;margin:4px 4px 4px 4px; padding:0px; display:inline-block; float:left; line-height:25px;}
 
-.touch-option {z-index: 1;min-height:30px;height:30px;background: linear-gradient(to left, #c85f5a, #A74F4B);color:white;border-radius:20px;margin:-15px 0px 0px 0px;width:80%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);font-family:quicksand;font-size: 15px;float:left;position:absolute;left:10%;}
+div#ContactForm1 { display: none !important;}
+
+.touch-moption {z-index: 1;min-height:30px;height:30px;background: linear-gradient(to left, #c85f5a, #A74F4B);color:white;border-radius:20px;margin:-15px 0px 0px 0px;width:80%;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);font-family:quicksand;font-size: 15px;float:left;position:absolute;left:10%;}
 
 next-previous-buttons {background-image: linear-gradient(to right, #406599, #3f5b94, #3f518d, #414786, #443c7e);position:fixed; bottom:0;width:100%;left:0;z-index:3;border-top-right-radius:25px;border-top-left-radius:25px;}
  
@@ -98,26 +105,21 @@ next-previous-buttons {background-image: linear-gradient(to right, #406599, #3f5
 
 .confirm {background-color:#423a78;height:50px;margin:0px 5px 5px 5px;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); }
 
-.mynext .m-i {animation-name: mymove;animation-duration: 2s;animation-iteration-count: infinite;}
-@keyframes mymove {0%   {margin-left: 0px;} 50%  {margin-left: 30px;} 100% {margin-left: 0px;}}
-
-.image-wrapper{height:0;padding-bottom:68.0%;border-radius:18px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.45); background:url(https://cdn.jsdelivr.net/gh/gkcube/images@1/loading-1-0-1.svg);  background-size: 102px;background-repeat: no-repeat;background-position: center center; }
-	
-.image-wrapper img {width:100%;border-radius:18px;background-color:white;}
-
-.dbox hr {border-color:#595E99;}
-
 .resetpopup {display:none;z-index:11;}
 #belowpopup {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:10;}
 
 #endpopup {display:none;z-index:11;}
 #belowend {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:10;}
 
-mathjax {display:inline-block;vertical-align:middle; text-align:left; margin-top:-15px; margin-bottom:-15px; font-size:13px;}
+.age {float:left;font-size:15px}
+.aa {float:left;border-radius:100%;padding:2px; margin-right:5px;}
 
+.bb {width:80%; border-radius:20px;height:70px;}
+  
+.o2 {width:50%;float:left;margin-left:30px;background-color:red;}
 ben {font-family:Solaimanlipi;}
 
-.moption {background-color:white;color:black; font-size: 15px;  margin-bottom: 7px; width:calc(100% - 40px);text-align: left; border-width:0px; 
+.moption {background-color:white;color:black; font-size: 15px;  margin-bottom: 7px; width:calc(100% - 44px);text-align: left; border-width:0px; 
 border-radius: 0px; border-top-right-radius: 15px;border-bottom-right-radius: 10px; border-left-style: solid;border-color:#595E99; 
 outline : none; height:60px; line-height:60px;padding:0 0 0 3px;float:left; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 
@@ -126,21 +128,20 @@ outline : none; height:60px; line-height:60px;padding:0 0 0 3px;float:left; box-
 .moption img {display: inline-block; vertical-align:middle;}
 
 .moption .material-icons {font-size:26px; color:#ff9e00; vertical-align: -7px; margin-top:-3px;margin-left:3px;}
-.o {width: 25px;margin-bottom: 7px; background-color:#008BC8;color:white; border-radius:0px; border:0px solid #595E99; margin-left:7px;
-font-size:17px; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border-left-width: 0px;height:60px;float:left;padding:0;
+.o {width: 30px;margin-bottom: 7px; background-color:#e6e6e6;color:black; border-radius:0px; border:0px solid #595E99; margin-left:7px;
+font-size:15px; border-top-left-radius: 10px;border-bottom-left-radius: 10px; border-left-width: 0px;height:60px; line-height:60px;float:left;padding:0;
 text-align:center;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 .r {background-color:#423a78;color:white; }
 
-#mqbox {background-color:white;margin: 20px 0px 35px 2.5%; padding-top:0px; padding-bottom: 0px;width:95%;float:left; border-radius: 10px; border-top-left-radius: 10px;border-top-right-radius: 10px;border-width:0px; border-bottom-width: 0px; border-color:#595E99; 
-border-style: solid; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); font-family:quicksand;}
+.mqbox {background-color:white; margin: 20px 0px 35px 2.5%; padding-top:0px; padding-bottom: 0px;width:95%;float:left; border-radius: 15px; border-top-left-radius: 10px;border-top-right-radius: 10px;border-width:0px; border-bottom-width: 0px; border-color:#595E99; border-style: solid; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5); font-family:quicksand;}
 
 .mquestion { background-color:white;font-size: 15px; color: black;width:calc(100% - 0px); min-height:70px;border-width:0px; border-radius: 0px; border-top-left-radius: 10px;
 border-top-right-radius: 10px; border-bottom-width: 2px;
 border-top-width: 0px; border-color:#595E99; border-style: solid; line-height:23px; margin: 0px 0px 7px 0px;}
 .mquestion abc {margin-left:0px;color:white;background-color:#008BC8;border:none;border-radius: 5px; padding:0px 2px 0px 2px;}
 
-right{margin-right:7px;color:white;background-color:#008BC8;border:none;border-radius: 5px; width:80px; height:30px; 
-line-height:30px;text-align:center;float:right;}
+right{margin-right:7px;color:black;border:none;border-radius: 5px; width:80px; height:30px; 
+line-height:30px;text-align:center;float:right; font-size:12px; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);}
 opt{height:30px; line-height:30px;float:left;}
   </style>
 </head>
@@ -162,21 +163,31 @@ function hidepage() {delayloading();$(".lockb").css('pointer-events','none'); $(
 </div>
 </div>
 
-<div id="msticky">
-<div class="msubhead">
-<button id="mclosebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
+<div id="sticky">
+<div class="subhead">
+<button id="closebtn" class="lockb" onclick="toolicon()"><i class="m-i" style="font-size:25px;"><toolicon>&#xe5c4</toolicon></i></button>
 
 <toolimg></toolimg>
 <button class="tooltitle">
 <tool1>Mock Test</tool1><br/><tool2>Mock 1</tool2>
 </button>
 
-<button id="mclosebtnr" class="load" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
+<button id="closebtnr" class="loading" onclick="location.reload()"><i class="m-i" style="font-size:28px;">&#xe5d5</i></button>
 
-<button class="lockb" id="mclosebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+<button class="lockb" id="closebtnr" onclick="location.replace('shareme://')"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
 
 </div></div>
 
+
+<audio id="Audio2" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/wrong.ogg" type="audio/ogg">
+</source></audio>
+<audio id="Audio1" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/gkcube/sound@v1.0.0.0/correct.ogg" type="audio/ogg">
+</source></audio>
+
+<script>
+var l = localStorage;
 
  function toolicon() {
  if(sessionStorage.getItem('1i')) {window.history.back();}
@@ -191,12 +202,12 @@ onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").
 
 
 
-<div id="mqbox" class='q1'>
+<div class='mqbox q1'>
 <button class="mquestion">MOCK TEST</button>
    <q1>
     <o1>
     <button class='o 1'>1</button><button class='moption' onclick='mock1()'>
-    <opt>MOCK TEST - 1 (10 MCQ)</opt><right>OPEN</right></button></o1>
+    <opt>MOCK TEST - 1 (7 QUESTIONS)</opt><right>OPEN</right></button></o1>
     <o2>
     <button class='o 2'>2</button><button class='moption'>
     <opt>MOCK TEST - 2</opt><right>OPEN</right></button></o2>
@@ -211,10 +222,11 @@ onhashchange = function (){ if(location.hash){ } else{ $(".toggle,#belowpopup").
 
 </div>
 
-<script> function mock1(){hidepage();location.href = 'mock1.html'}
+<script> function mock1(){hidepage();   if(l.getItem('e1')){location.href = 'result1.html'} else{location.href = 'mock1.html'}}
 
 function cont(){
-if(localStorage.getItem('sec1')){$('.1').addClass('r');$('o1 right').html('RESUME').addClass('r');}
+if(l.getItem('s1')){$('.1').addClass('r');$('o1 right').html('CONTINUE').addClass('r');}
+if(l.getItem('e1')){$('.1').addClass('r');$('o1 right').html('RESULT').addClass('r');}
 
 }
 </script>
@@ -222,7 +234,6 @@ if(localStorage.getItem('sec1')){$('.1').addClass('r');$('o1 right').html('RESUM
 <script>
 
  $(document).ready(function() {
- 
    if(location.hash){window.history.back();}
    $('.tooltitle').delay(500).slideDown('slow');
    
@@ -231,9 +242,9 @@ setTimeout(function() {if(sessionStorage.getItem('f1')){showpage();}sessionStora
 }); 
 $(document).ready(function() { cont(); });
 window.onload = function() {showpage();};
-$('.load').click(function(){hidepage();});
+$('.loading').click(function(){hidepage();});
 </script>
-<link rel="prefetch" href="list1.html"/>
-<link rel="prefetch" href="mock1.html"/>
+<link rel="prefetch" href="/2021/09/list.html?m=1"/>
+<link rel="prefetch" href="/2021/01/index.html?m=1"/>
 </body>
 </html>
