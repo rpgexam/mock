@@ -162,7 +162,7 @@ location.hash = "go";$("#whitepopup").fadeIn('fast');  $(".tog").slideDown('fast
 <div id='moc'></div>
 
 <script>
-var url = 'https://api.github.com/repos/gkcube/mysite/git/refs/heads/main', tag;
+var url = 'https://api.github.com/repos/gkcube/mysite/git/refs/heads/main?access_token=', tag;
 function repo(){fetch(url).then(r => r.json()).then((o) => {tag=o.object.sha;})}
 
 function jsload() {$.getScript("https://cdn.jsdelivr.net/gh/rpgexam/js@2/mock.js");}
