@@ -1,0 +1,188 @@
+<meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport' />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "PLEASE WAIT";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+</script>
+
+<style>.result {display:none;}#HTML15{display:block}
+
+#english  {font-style:normal; font-weight:600;font-family:Quicksand; }
+#bengali {font-weight:500;font-family:SolaimanLipi; }
+eng {font-style:normal; font-weight:600;font-family:Quicksand; }
+ben {font-weight:normal; font-style:normal;font-family:SolaimanLipi; }
+english  {font-style:normal; font-weight:600;font-family:Quicksand; }
+bengali {font-weight:normal; font-family:SolaimanLipi;}
+
+.m-i {font-family: 'Material Icons';font-weight: normal;font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none;display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; font-feature-settings: 'liga'; text-rendering: optimizeLegibility;vertical-align:middle;}
+button {outline : none;}
+button {outline: none;user-select: none;border:none;padding:none;box-shadow:none;background:none;color:white;font-family:bengali;}
+.ad {background-color:white;color:black;font-size:14px;padding-top:7px;padding-bottom:7px;min-height:150px;text-align:center;margin-top:5px}
+
+.fbcomments {color:black;font-size:14px;padding-bottom:7px;min-height:280px;text-align:center;background:url(https://cdn.jsdelivr.net/gh/gkcube/images/loading-1-0-1.svg);background-size: 102px;background-repeat: no-repeat;background-position: center center;background-color:white;}
+.fb-comments iframe{background-color:white;}
+.search  {font-weight: bold;font-size: 15px; background-color:white; color: black;  margin-bottom: 7px; margin-right: 0px; margin: auto; text-align: center; padding-top:10px; margin-top:0px;}
+
+.upbar {background-color:#2e86c1; text-align:center; border-width:0px; color: white; border-radius: 0px; font-weight: normal; font-style: normal; font-size: 14px;margin-top:7px; padding-top: 7px; padding-bottom: 7px; text-align: middle; font-family: Quicksand; display:block;width:100%;}
+
+.thumb { padding:0px; text-align:left; margin-bottom:2px;}
+@media only screen and (max-width: 600px) {
+ .thumb {display: none;}}
+
+
+@font-face {font-display: swap;font-family: Oswald; src:  url(https://fonts.gstatic.com/s/oswald/v16/TK3iWkUHHAIjg752GT8G.woff2) format('woff2');}
+@font-face {font-display: swap;font-family: Quicksand; src: url(https://fonts.gstatic.com/s/quicksand/v7/6xKtdSZaM9iE8KbpRA_hK1QN.woff2) format('woff2');}
+@font-face {font-display: swap;font-family: SolaimanLipi; src: url(https://cdn.jsdelivr.net/gh/gkcube/fonts@1/Solaiman.woff2) format('woff2');}
+@font-face {font-display: block;font-family: 'Material Icons';font-style: normal; font-weight: 400; src: url(https://fonts.gstatic.com/s/materialicons/v103/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}
+
+@font-face {font-family: bengali; src: url(https://cdn.jsdelivr.net/gh/gkcube/fonts@1/Solaiman.woff2) format('woff2');}
+@font-face {font-family: Roboto; src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');)}
+
+#sticky { position: fixed; margin-bottom:300px; top: 0px; left: 0px; z-index: 10; width:100%;color:black}
+
+.menubar {background-color:white; color: black; text-align:left; width:100%;height:54px;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);padding-top:2px;}
+.menubar img {float:left;margin:6px 0px 0px 6px;}
+
+.menubar abc {background-color:transparent; font-size:17px; color:white; border:0px solid #C8C8C8; margin-top:10px; font-weight: normal;display:inline-block;padding:3px 7px 1px 7px;border-top-left-radius:20px;border-bottom-right-radius:20px;}
+
+
+toolimg {float:left;}
+.tooltitle {height:51.5px; line-height:1.1;}
+tool1{font-size:15px;background-color:#c85f5a; border-radius:5px;padding: 2px 6px 2px 5px; float:left;border-bottom-left-radius:0px;border-top-left-radius:5px;}
+
+tool2 {font-size:15px;background-color:#2E4053;border-radius:5px;padding: 2px 6px 2px 5px; float:left; border-top-left-radius:0px;border-bottom-left-radius:5px;}
+
+tool1h {font-family:Zen Dots; font-size:22px;}
+  
+tool2h {font-size:14px;line-height:1;background-color:#1E569D;border-radius:50px;padding: 0px 4px 0px 4px;}
+
+.closebtn {background-color:transparent;border:none; border-radius:500px; width:40px;height:45px; float:left; margin:3px 0px 0px 8px;text-align:center;color:#000;transition-duration: 0.2s;}
+.closebtn:active {color:grey;}
+.closebtnr {width:40px;height:45px;float:right; margin:3px 0px 0px 0px; color:#000;transition-duration: 0.2s;}
+.mbar {margin-right:8px}
+
+.closebtnr:active {color:black;}
+
+   .close {background-color:#423a78;height:50px; border:none;position:fixed;z-index:5;bottom:120px;width:150px; right:5%; border-radius:5px}
+  .close .m-i {font-size:25px;margin:-2px 2px 0px 0px;}
+ 
+#belowpopup {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(0, 0, 0, 0.5);z-index:5;}
+#whitepopup {display:none; position:fixed; width:100%;top:0;left:0; height:100vh; background-color:rgba(255, 255, 255, 1);z-index:5;}
+
+.tog{display:none}
+
+.menupop {height:350px; overflow-y: scroll; overflow-x: hidden; background-color:#403954; padding:0px 10px 0px 10px;border-radius:5px;border:0px solid #403954;border-top-width:10px;border-bottom-width:10px;}
+  
+menubox {position:fixed;top:70px;left:5%;z-index:5;width:90%; margin: 0px auto 0px auto;}
+  @media only screen and (min-width: 768px) {submitbox { left:15%;width:70%}}
+  @media only screen and (min-width: 1000px) {submitbox { left:25%;width:50%}}
+
+
+.dbox {background-color:white;width:90%;border-radius:5px;color:black;text-align:center;padding:0;font-family:quicksand;}
+.dbox hr { border:0;border-top: 2px solid #595E99;}
+.sharepopup{display:none; height:320px;}
+sharebox {position:fixed;bottom:120px;left:5%;z-index:6;width:100%}
+  @media only screen and (min-width: 768px) {.sharepopup {width: 50%;}sharebox { left:25%;}}
+
+.sharebutton {height:80px;color:black;width:100%;box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);border-radius:5px; float:left;}
+.sharetable table {width:100%;}
+.sharetable td {line-height:0.7em;padding:2px;text-align:center;width:33.33%;}
+.sharetable td img { width:40px;}
+
+</style>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rpgexam/css@3/mock.css" />
+<script>
+function bodylock() {$('body').css('overflow','hidden');}
+  
+function bodyunlock() {$('body').css('overflow','visible');}
+
+
+onhashchange = function (){ 
+  if(location.hash=='#go'){ } else{ $('body').css('overflow','visible'); $(".toggle").fadeOut('fast');}}
+
+ function hback() {if(location.hash=='#go'){history.back();}}
+  
+ function showmenu() {
+if(location.hash=='#go') {history.back();}
+else {
+
+location.hash = "go";$("#whitepopup").fadeIn('fast');  $(".tog").slideDown('fast');$('body').css('overflow','hidden');
+
+ }}
+</script>
+
+<div id="belowpopup" class="toggle" onclick="hback()";></div>
+<div id="whitepopup" class="toggle" onclick="hback()";></div>
+
+
+
+
+
+
+
+<div id="popup2" class="popup2">
+<div class="loadshadow"><div class="loader"></div><br />
+<loading>LOADING</loading></div></div>
+
+<div id="sticky">
+<div class="menubar">
+<a href="/">
+<button class="closebtn lockb" onclick="toolicon()">
+<i class="m-i" style="font-size:25px;"><toolicon>&#xe88a</toolicon></i></button>
+</a>
+
+<toolimg></toolimg>
+<a href="/">
+<button class="tooltitle">
+<tool1>RPGExam.COM</tool1><br/><tool2>Welcome!</tool2>
+</button>
+</a>
+
+<button class="closebtnr mbar " onclick="showmenu();"><i class="m-i" style="font-size:25px;">&#xe5d2</i></button>
+<button class="closebtnr " onclick="share();"><i class="m-i" style="font-size:25px;">&#xe80d</i></button>
+
+<button class="closebtnr"  id="fsearch" onclick="hback();pselect()"><i class="m-i" style="font-size:28px;">&#xe8b6</i></button>
+
+</div>
+
+<div id="flipdown">
+<div id="psearch"><br/>
+<div id="gcsmobile"><gcse:searchbox-only></gcse:searchbox-only></div></div>
+</div></div>
+
+<div style="height:54px;"></div><brtag><brtag></brtag></brtag>
+<div id='moc'></div>
+
+<script>
+var url = 'https://api.github.com/repos/gkcube/mysite/git/refs/heads/main', tag;
+function repo(){fetch(url).then(r => r.json()).then((o) => {tag=o.object.sha;})}
+
+function jsload() {$.getScript("https://cdn.jsdelivr.net/gh/rpgexam/js@2/mock.js");}
+
+function ld(){var str = window.location.href,ur = new URL(str),ccc = ur.searchParams.get("c");
+$("#moc").load("https://cdn.jsdelivr.net/gh/gkcube/mysite@"+tag+"/"+ccc+".html", 
+    function (responseText, textStatus, req) {if (textStatus == "error") {repo(); ld()} else {jsload()}});}
+
+function getc(){$.getScript( "https://cdn.jsdelivr.net/gh/rpgexam/js@2/mock.js" )
+  .done(function() { ld();}).fail(function() {getc();});}
+
+jsload();getc();repo();
+window.onload = function(){setTimeout(function(){l.removeItem(q+'qw'); gotohome();}, 1500);}
+</script>
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/swiper@6.7.1/swiper-bundle.min.js"></script>
+
+
+
+
+
+
