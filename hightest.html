@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html>
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0' name='viewport'/>
+
+<script src='https://cdn.jsdelivr.net/gh/gkcube/js@1/jquery.min.js'></script>
+
+<script>
+function delayloading() {
+var ld = document.getElementsByTagName("loading");
+setTimeout(function() {ld[0].innerHTML = "NETWORK SLOW";}, 7000);
+setTimeout(function() {ld[0].innerHTML = "RETRYING";}, 8000);
+setTimeout(function() {ld[0].innerHTML = "LOADING";if($('#popup2').is(':visible')){location.reload();}}, 10000); }
+delayloading(); 
+
+function showpage() {$("#popup2").fadeOut();}
+function hidepage() {delayloading(); $('#popup2').show();}
+</script>
+
+
+<style>
+  .popup2 {
+background-color: #ffffff;
+width:100%;height:100vh;top:0;left:0;position:fixed; z-index:5;text-align:center;color:black;font-family:Quicksand; }
+
+.loadshadow {box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.50);padding-top:25px;width:120px;height:95px;margin: 0px auto 0px auto;border-radius:10px;margin-top:40vh;}
+
+.loader {margin-left:auto;margin-right:auto; border: 2px solid transparent;border-radius: 100%;border-left: 2px solid #3498db;border-right: 2px solid #a8044b;width: 30px;height: 30px; animation: spin 0.8s linear infinite;z-index:4;}
+  @keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+  
+  .mytab table{width:100%}
+  .mytab table, .mytab th, .mytab td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.mytab th, .mytab td {
+  padding: 5px;
+  text-align: left;
+}
+
+
+</style>
+
+<div id="popup2" class="popup2">
+<div class="loadshadow">
+<div class="loader">
+</div>
+<br/>
+<loading>LOADING</loading>
+</div>
+</div>
+<input class="page-number-input" id="name" oninput="validity.valid||(value='');manage1(this);" type="text" />
+
+  <input class="page-number-input" id="scr" oninput="validity.valid||(value='');manage2(this);" type="text" />
+<button class="gotopage" id="hidebutton" onclick="showkeyboard()">GO</button>
+
+<button class="gotopage" disabled="" hidden="" id="gobutton" onclick="submit();">GO</button>
+<brtag>
+  <brtag>
+    <brtag>
+
+<script>
+sessionStorage.setItem('score', '100');
+var hidebutton = document.getElementById('hidebutton');
+var gobutton = document.getElementById('gobutton');
+  
+  
+function manage1(p) {
+if (p.value != '') 
+{gobutton.hidden = false; gobutton.disabled = false; hidebutton.hidden = true;}
+ else 
+{gobutton.hidden = true; gobutton.disabled = true; hidebutton.hidden = false;}
+var name = document.getElementById("name").value;
+document.getElementById("hcb_form_name").value = name;
+manage();
+}
+  
+  function manage2(p) {
+if (p.value != '') 
+{gobutton.hidden = false; gobutton.disabled = false; hidebutton.hidden = true;}
+ else 
+{gobutton.hidden = true; gobutton.disabled = true; hidebutton.hidden = false;}
+    
+    
+    var nd = new Date();
+var date = nd.getDate()+'-'+(nd.getMonth()+1)+'-'+nd.getFullYear()
+var time = nd.getHours() + ":" + nd.getMinutes();
+var DT = date+' '+time;
+    
+    
+var scr = document.getElementById("scr").value;
+  document.getElementById("hcb_form_content").value = scr+'<br/>'+'('+DT+')';
+    
+  
+    
+manage();
+}
+  
+  
+ function manage(){var scr = document.getElementById("scr").value,name = document.getElementById("name").value;
+                   if (scr != '' && name != '') {gobutton.hidden = false; gobutton.disabled = false; hidebutton.hidden = true;}
+ else 
+{gobutton.hidden = true; gobutton.disabled = true; hidebutton.hidden = false;} }
+  
+  
+  
+function showkeyboard(){
+  var scr = document.getElementById("scr").value,name = document.getElementById("name").value;
+  if (name!=''){document.getElementById("scr").focus()} else { document.getElementById("name").focus()}  }
+function submit(){make(); document.getElementById("hcb_submit").click();  }
+
+var input = document.getElementById("name");
+input.addEventListener("keypress", function(e) {
+  if (e.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("gobutton").click(); 
+  }
+});
+  
+  var input2 = document.getElementById("scr");
+  input2.addEventListener("keypress", function(e) {
+  if (e.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("gobutton").click(); 
+  }
+});
+  
+</script>
+<!-- begin wwww.htmlcommentbox.com -->
+
+ <div id="HCB_comment_box">
+
+
+
+</div>
+ <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24OffYAhfqppTsjVf1ckI8M%2F"+"&opts=16862&num=10&ts=1616389315944");if (typeof s!="undefined") document.getElementById("HCB_comment_box").appendChild(s);})(); /*-->*/ 
+
+
+
+</script>
+<!-- end www.htmlcommentbox.com -->
+
+<style>
+ 
+  #HCB_comment_box {position:fixed;top:0;left:0;height:100%;overflow-y:scroll;overflow-x: hidden;width:100%;margin-top:55px;margin-bottom:100px;padding-bottom:100px; width:0px;height:0px;}
+  p#hcb_msg {padding-left:10px;
+}
+  #HCB_comment_box .btn-secondary {margin-left:10px;}
+  #HCB_comment_box #hcb_form .home-desc 
+  {opacity:0;pointer-events:none;position:absolute;}
+  #HCB_comment_box form {
+    padding: 10px 0 10px 10px;width:calc(100% - 20px);
+  padding-right: 10px;background-color: white;}
+  #HCB_comment_box #hcb_form .hcb-door-in {
+   opacity:0;pointer-events:none;position:absolute;
+}
+  #HCB_comment_box h3 {margin-left:10px}
+  
+#HCB_comment_box .likes {padding: 10px;position:absolute;
+    border-radius: 5px;
+    background-color: white;
+  margin-right: 20px;color:black;box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);}
+ 
+  #HCB_comment_box .comment {
+    padding-top: 4px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    color: black;
+}
+  
+  #HCB_comment_box .hcb-comment-body {
+    font-size: 14px;
+    width: calc(100% - 15px);
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+   border-width:0px;
+   border-left-width:2px;
+    border-style:solid;
+    border-color:black;
+    
+   
+}
+  
+ #HCB_comment_box a.hcb-like {
+    opacity:0;pointer-events:none;position:absolute;
+}
+  #HCB_comment_box a.hcb-flag {
+    opacity:0;pointer-events:none;position:absolute;
+}
+ #HCB_comment_box a.hcb-reply {padding:5px;border-radius: 5px;
+    background-color: white; box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+     border-width:0px;
+   border-left-width:2px;
+    border-style:solid;
+    border-color:black;
+   opacity:0;pointer-events:none;position:absolute;
+}
+  
+  b.author-name {
+    
+   
+  
+}
+  #HCB_comment_box blockquote {
+    width:calc(100% - 30px);
+    border-radius: 5px;
+     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+    background-color:#ffffff;
+    padding: 5px 0 8px 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    overflow: visible;
+}
+  #HCB_comment_box .hcb-comment-tb {
+    padding-left: 20px;
+    
+}
+</style>
+<button class="mmb" style="position:fixed;bottom:0;left:0" onclick="getc()">SCORE</button>
+      <div class='mytab'>
+      <table id="mytab">
+  <tr><th>Name</th><th>Score</th></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  <tr><td>-</td><td>-</td></tr>
+  
+  
+  
+</table>
+      </div>
+     
+      
+      
+<script>
+    
+function stab() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("mytab");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[1];
+      y = rows[i + 1].getElementsByTagName("td")[1];
+      if (parseInt(x.innerHTML) < parseInt(y.innerHTML)) {
+        shouldSwitch = true;
+        break;}}
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;}}}
+
+  
+
+var s = sessionStorage.getItem('score');
+  
+  
+  
+   function getc(){
+
+     
+var clist = document.querySelectorAll(".hcb-comment-body"),
+c =[];for (var i = 0; i < clist.length; i++) {const cd = clist[i].innerHTML;
+c.push(cd);c.join(", ");} 
+     
+var alist = document.querySelectorAll(".author-name"),
+a =[];for (var i = 0; i < alist.length; i++) {const cd = alist[i].innerHTML;
+a.push(cd);a.join(", ");} 
+
+     var tab = document.getElementById("mytab");
+     var td = tab.getElementsByTagName('td');
+     
+if (a[0]!==undefined){td[0].innerHTML = a[0];td[1].innerHTML = c[0]}
+if (a[1]!==undefined){td[2].innerHTML = a[1];td[3].innerHTML = c[1]}
+if (a[2]!==undefined){td[4].innerHTML = a[2];td[5].innerHTML = c[2]}
+if (a[3]!==undefined){td[6].innerHTML = a[3];td[7].innerHTML = c[3]}
+if (a[4]!==undefined){td[8].innerHTML = a[4];td[9].innerHTML = c[4]}    
+if (a[5]!==undefined){td[10].innerHTML = a[5];td[11].innerHTML = c[5]}    
+     stab();
+     
+}
+  function make() { hidepage(); setInterval(function(){ if ($('.btn-secondary').is(':visible')) { location.reload();  }}, 1000); }
+
+
+  setInterval(function(){getc();  }, 1000);
+
+  window.onload = function() { showpage(); }
+
+
+  
+  
+var a1 = 97,
+
+numArray = [140000, 104, 99, 23, 76, 98, 04];
+numArray.sort(function(a, b) {
+  return b - a;
+});
+
+
+
+
+      </script>
+</html>
